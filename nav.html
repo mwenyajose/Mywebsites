@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://kit.fontawesome.com/b4e306a92d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles1.css" >
+<style>
+  table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="chibombo.html" >Central </a></li>
+      <li><a href="Chililabombwe.html" >Copperbelt</a></li>
+      <li><a href="chadiza.html"> Eastern</a></li>
+      <li><a href="chembe.html" >Luapula</a></li>
+      <li><a href="chilanga.html" >Lusaka</a></li>
+      <li><a href="chinsali.html" >Muchinga</a></li>
+      <li><a href="chavuma.html" >North Western </a></li>
+      <li><a href="chilubi.html" >Northern</a></li>
+      <li><a href="chikankata.html" >Southern</a></li>
+      <li><a href="kalabo.html" >Western</a></li>
+    </ul>
+      
+  </nav>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - 
+This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html> 
