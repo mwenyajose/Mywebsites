@@ -1,0 +1,154 @@
+
+body {
+  font-family: "Lato", sans-serif;
+  margin:auto;
+  width: 100%;
+  
+}
+/*top header*/
+header{
+  background-color: whitesmoke;
+  height: 55px;
+  padding-bottom:1px;
+  left:0;
+  position: fixed;
+  width: 100%;
+}
+/* logo image*/
+img {
+float:left ;  
+}
+/* top header text*/
+header p {
+  color: black;
+  padding-top: 15px;
+  padding-left: 100px;
+  font-size: 20px; 
+}
+/*top navigation*/
+nav{
+  background-color: green;
+  height: 45px;
+  margin-top:55px;
+  left:0;
+  position: fixed;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+
+}
+nav ul
+{
+list-style: none;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+nav li
+{
+width: 150px;
+border-bottom: none;
+line-height: 30px;
+font-size: 15px;
+display: inline-block;
+
+}
+nav a
+{
+text-decoration: none;
+color: #fff;
+}
+nav a:hover
+{
+color: red;
+text-decoration: none;
+    list-style: none;
+}
+
+/* Fixed sidenav */
+.sidenav {
+  height: 100%;
+  position: fixed;
+  margin-top: 99px;
+  padding-top: 10px;
+  width: 160px;
+  z-index: 1;
+  background-color: green;
+  overflow-y: auto;
+ 
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, ul {
+  padding:10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: whitesmoke;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+}
+
+  /* On mouse-over */
+  .sidenav a:hover {
+    color: red;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /* Main content */
+  main {
+    margin-left: 170px;
+    font-size: 16px; 
+    padding: 0px 10px;
+    padding-top: 110px;
+  }
+  main p {
+    font-size: 18px;
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+  } 
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+ 
+  footer{
+    text-align: center;
+  }
+/* Some media queries for responsiveness */
+
+/* Smartphone queries */
+@media screen and (max-width:575px) {
+ body {
+  font-size: 12px; 
+ }
+}
+
+/* Tablet size queries */  
+@media screen and (min-width:576px) and (max-width:991px) {
+  body {
+    font-size: 14px; 
+   }
+}
+
+/* Desktop and Laptop size queries */
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 16px; 
+   }
+    
+}
